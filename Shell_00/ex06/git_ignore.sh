@@ -1,2 +1,2 @@
 #!/bin/bash
-git ls-files --others --ignored --exclude-standard
+git status --ignored -s | grep "\!\!.*" | cut -c4-
