@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 22:38:44 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/07 23:00:11 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/08 14:02:31 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,35 @@
 
 void	ft_putchar(char c)
 {
-	write(1, &c, 2);
+	write(1, &c, 1);
 }
 
-int	print(char a, char b, char c, char b))
+void	print(int a, int b)
+{
+	ft_putchar('0' + a / 10);
+	ft_putchar('0' + a % 10);
+	ft_putchar(' ');
+	ft_putchar('0' + b / 10);
+	ft_putchar('0' + b % 10);
+	if (a != 98)
+		write (1, ", ", 2);
+}
+
+void	ft_print_comb2(void)
 {
 	int	a;
 	int	b;
 
 	a = 0;
-	b = 0;
-	c = 0;
-	d = 0;
-	ft_putchar(a);
-	ft_putchar(b);
-	ft_putchar(' ');
-	ft_putchar(c);
-	ft_putchar(d);
+	b = 1;
+	while (a < 99)
+	{
+		while (b < 100)
+		{
+			print(a, b);
+			b++;
+		}
+	a++;
+	b = a + 1;
+	}
 }
