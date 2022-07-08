@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 18:35:39 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/07 21:06:23 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/08 11:00:39 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,27 +28,25 @@ void	print(char a, char b, char c)
 
 void	ft_print_comb(void)
 {
-	char	a;
-	char	b;
-	char	c;
+	char	nb[3];
 
-	a = '0';
-	b = '1';
-	c = '2';
-	while (a <= '7')
+	nb[0] = '0';
+	nb[1] = '1';
+	nb[2] = '2';
+	while (nb[0] <= '7')
 	{
-		while (b <= '8')
+		while (nb[1] <= '8')
 		{
-			while (c <= '9')
+			while (nb[2] <= '9')
 			{
-				print(a, b, c);
-				c++;
+				print(nb[0], nb[1], nb[2]);
+				nb[2]++;
 			}
-			b++;
-			c = b + 1;
+			nb[1]++;
+			nb[2] = nb[1] + 1;
 		}
-		a++;
-		b = a + 1;
-		c = b + 1;
+		nb[0]++;
+		nb[1] = nb[0] + 1;
+		nb[2] = nb[1] + 1;
 	}
 }
