@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:41:19 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/06 15:55:28 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/10 15:19:33 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_print_alphabet(void)
 {
-	write(1, "abcdefghijklmnopqrstwxyz", 26);
+	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
 }

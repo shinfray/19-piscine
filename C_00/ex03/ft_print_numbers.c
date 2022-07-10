@@ -6,13 +6,13 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 15:41:19 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/06 16:24:31 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/10 15:23:56 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
 	write(1, "0123456789", 10);
 }
