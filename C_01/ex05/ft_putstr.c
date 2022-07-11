@@ -6,11 +6,11 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 20:10:41 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/10 20:15:15 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/11 12:05:56 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//	#include <unistd.h>
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
