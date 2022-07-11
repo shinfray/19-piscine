@@ -1,33 +1,11 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/10 20:20:47 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/11 09:04:52 by shinfray         ###   ########.fr       */
+/*   Created: 2022/07/11 10:59:23 by shinfray          #+#    #+#             */
+/*   Updated: 2022/07/11 10:59:38 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//	#include <stdio.h>
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		++i;
-	}
-	return (i);
-}
-
-//	int	main(void)
-//	{
-//		int	count;
-//	
-//		count = ft_strlen("abcdefghij");
-//		printf("There is %d charachters in this string!\n", count);
-//	}
