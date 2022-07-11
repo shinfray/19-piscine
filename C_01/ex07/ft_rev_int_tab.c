@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 09:11:58 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/11 12:54:06 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/11 16:24:23 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,32 +24,26 @@ void	ft_swap(int *a, int *b)
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = 0;
-	while (i <= (size / 2))
+	while (i < (size / 2))
 	{
-		ft_swap(&tab[j], &tab[size - 1]);
-		size--;
+		ft_swap(&tab[i], &tab[size - i - 1]);
 		i++;
-		j++;
 	}
 }
 
 /*
 int	main(void)
 {
-	int	tab[5];
+	int	tab[3];
 	int	size;
 	int	i;
 
-	size = 5;
+	size = 3;
 	tab[0] = 25;
 	tab[1] = 78;
 	tab[2] = 65;
-	tab[3] = 12;
-	tab[4] = 38;
 	i = 0;
 	while (i < size)
 	{
