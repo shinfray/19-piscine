@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 09:11:58 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/11 10:44:24 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/11 12:54:06 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,31 +37,33 @@ void	ft_rev_int_tab(int *tab, int size)
 	}
 }
 
-//	int	main(void)
-//	{
-//		int	tab[5];
-//		int	size;
-//		int	i;
-//	
-//		size = 5;
-//		tab[0] = 25;
-//		tab[1] = 78;
-//		tab[2] = 65;
-//		tab[3] = 12;
-//		tab[4] = 38;
-//		i = 0;
-//		while (i < size)
-//		{
-//			printf("%d / ", tab[i]);
-//			i++;
-//		}
-//		printf("\n");
-//		ft_rev_int_tab(tab, size);
-//		i = 0;
-//		while (i < size)
-//		{
-//			printf("%d / ", tab[i]);
-//			i++;
-//		}
-//		printf("\n");
-//	}
+/*
+int	main(void)
+{
+	int	tab[5];
+	int	size;
+	int	i;
+
+	size = 5;
+	tab[0] = 25;
+	tab[1] = 78;
+	tab[2] = 65;
+	tab[3] = 12;
+	tab[4] = 38;
+	i = 0;
+	while (i < size)
+	{
+		printf("%d / ", tab[i]);
+		i++;
+	}
+	printf("\n");
+	ft_rev_int_tab(tab, size);
+	i = 0;
+	while (i < size)
+	{
+		printf("%d / ", tab[i]);
+		i++;
+	}
+	printf("\n");
+}
+*/

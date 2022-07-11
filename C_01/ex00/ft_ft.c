@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 15:56:06 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/10 17:13:55 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/11 12:45:48 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ void	ft_ft(int *nbr)
 	*nbr = 42;
 }
 
-//	int	main(void)
-//	{
-//		int	nbr;
-//
-//		ft_ft(&nbr);
-//		printf("%d", nbr);
-//	}
+/*
+int	main(void)
+{
+	int	nbr;
+
+	ft_ft(&nbr);
+	printf("%d", nbr);
+}
+*/
