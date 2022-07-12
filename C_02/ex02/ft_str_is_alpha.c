@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 22:12:55 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/11 22:32:18 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/12 09:53:06 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,5 @@ int	ft_str_is_alpha(char *str)
 //	{
 //		printf("%d\n", ft_str_is_alpha(""));
 //		printf("%d\n", ft_str_is_alpha("asldfjkASDF"));
+//		printf("%d\n", ft_str_is_alpha("asldfjkA64*^*SDF"));
 //	}
