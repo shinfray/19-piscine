@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 10:20:23 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/12 10:27:03 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/12 11:19:59 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_str_is_lowercase(char *str)
 
 	i = 0;
 	if (str[i] == '\0')
-		return (1);;
+		return (1);
 	while (str[i])
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
