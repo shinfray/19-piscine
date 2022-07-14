@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:50:28 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/13 22:12:42 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/14 15:54:10 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,17 +61,14 @@ void	ft_putnbr_base(int nbr, char *base)
 	base_len = ft_strlen(base);
 	if (base_len > 1)
 	{
-		if (base_len >= 1)
+		if (nbr < 0)
 		{
-			if (nbr < 0)
-			{
-				ft_putchar('-');
-				nbr_us = -nbr;
-			}
-			else
-				nbr_us = nbr;
-			ft_recurs(nbr_us, base, base_len);
+			ft_putchar('-');
+			nbr_us = -nbr;
 		}
+		else
+			nbr_us = nbr;
+		ft_recurs(nbr_us, base, base_len);
 	}
 	return ;
 }
@@ -79,6 +76,6 @@ void	ft_putnbr_base(int nbr, char *base)
 /*
 int	main(void)
 {
-	ft_putnbr_base(-74, "0jd5lp1");
+	ft_putnbr_base(74, "0jd5lp1");
 }
 */

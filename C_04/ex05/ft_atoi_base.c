@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 10:18:22 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/14 12:52:11 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/14 15:48:27 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,8 @@ int	ft_atoi_base(char *str, char *base)
 	sign = 1;
 	base_len = ft_strlen(base);
 	answer = 0;
+	if (base_len <= 1)
+		return (0);
 	while (ft_isspace(str[i]) == 1)
 		i++;
 	while (str[i] == '-' || str[i] == '+')
@@ -91,8 +93,8 @@ int	ft_atoi_base(char *str, char *base)
 
 int	main(void)
 {
-	char	str[] = "-2147483648";
-	char	base[] = "0123456789";
+	char	str[] = "j";
+	char	base[] = "ppj";
 
 	printf("%d\n", ft_atoi_base(str, base));
 }
