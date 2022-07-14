@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 18:41:42 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/12 19:34:37 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/14 16:39:29 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,13 @@ int	ft_strcmp(char *s1, char *s2)
 	int	i;
 
 	i = 0;
-	while (s1[i] || s2[i])
+	while (s1[i])
 	{
 		if (s1[i] == s2[i])
 		{
 			i++;
 		}
-		else if (s1[i] < s2[i])
-			return (s1[i] - s2[i]);
-		else if (s1[i] > s2[i])
+		else
 			return (s1[i] - s2[i]);
 	}
 	return (0);
