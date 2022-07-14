@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 10:18:22 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/14 12:31:40 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/14 12:52:11 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,8 +91,8 @@ int	ft_atoi_base(char *str, char *base)
 
 int	main(void)
 {
-	char	str[] = "   -+-++llf001f01+105";
-	char	base[] = "fl";
+	char	str[] = "-2147483648";
+	char	base[] = "0123456789";
 
 	printf("%d\n", ft_atoi_base(str, base));
 }
