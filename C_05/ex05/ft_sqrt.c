@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 09:29:55 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/15 11:22:13 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/16 18:25:53 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,11 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	printf("%d\n", ft_sqrt(2147395600));
 }
+*/

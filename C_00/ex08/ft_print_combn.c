@@ -6,10 +6,10 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 12:00:06 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/10 12:21:13 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/16 18:57:50 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_comb(int n);
+void	ft_print_comb(int n);
