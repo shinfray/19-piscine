@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 19:33:18 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/16 22:15:18 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/16 23:15:26 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putstr(char *str)
 	}
 }
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char **s1, char **s2)
 {
 	int	i;
 
@@ -44,22 +44,22 @@ int	ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-void	ft_sort(char *str)
+void	ft_sort(char **str, int count)
 {
-	int	i;
-	int	j;
-	int	*temp;
+	int		i;
+	int		j;
+	char	**temp;
 
 	i = 1;
 	temp = NULL;
-	while (i = (argc - 2))
+	while (i == (count - 2))
 	{
 		j = i + 1;
 		if (ft_strcmp(str[i][0], str[j][0]) > 0)
 		{
-			temp = &str[i][0];
-			&str[i][0] = &str[j][0];
-			&str[j][0] = temp;
+			temp = &str[i];
+			str[i][0] = str[j][0];
+			str[j][0] = **temp;
 		}
 		else
 			i++;
@@ -75,7 +75,7 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < (argc - 2))
 	{
-		ft_sort(argv[i][0]);
+		ft_sort(argv[i][0], argc);
 		i++;
 	}
 	i = 1;
