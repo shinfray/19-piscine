@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:01:46 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/16 11:33:30 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:08:32 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ int	main(int argc, char **argv)
 {
 	(void) argc;
 	ft_putstr(*argv);
-	ft_putstr("\n");
+//	ft_putstr("\n");
 	return (0);
 }
