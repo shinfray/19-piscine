@@ -1,43 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_utlimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/18 12:07:00 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/18 14:31:01 by shinfray         ###   ########.fr       */
+/*   Created: 2022/07/18 17:38:03 by shinfray          #+#    #+#             */
+/*   Updated: 2022/07/18 20:56:53 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	ft_strlen(char	*str)
+int	ft_ultimate_range(int **range, int min, int max)
 {
+	int	tab_size;
 	int	i;
+	int	*tab;
 
 	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-char	*ft_strdup(char *src)
-{
-	char	*copy;
-	int		i;
-
-	i = 0;
-	copy = malloc(sizeof(*copy) * (ft_strlen(src) + 1));
-	if (!copy)
-		return (0);
-	while (src[i])
+	if (min >= max)
 	{
-		copy[i] = src[i];
-		i++;
+		*range = NULL;
+		return (0);
 	}
-	copy[i] = src[i];
-	return (copy);
+	tab_size = max - min;
+	tab = malloc(sizeof(*tab) * tab_size);
+	if (!tab)
+		return (-1);
+	while (min != max)
+	{
+		tab[i] = min;
+		i++;
+		min++;
+	}
+	*range = tab;
+	return (tab_size);
 }
 
 /*
@@ -45,9 +43,17 @@ char	*ft_strdup(char *src)
 
 int	main(void)
 {
-	char	str[] = "Hello world!";
+	int	min = 5;
+	int	max = 15;
+	int	i = 0;
+	int	size;
+	int	*ptr;
 
-	printf("%s\n", str);
-	printf("%s\n", ft_strdup(str));
+	size = ft_ultimate_range(&ptr, min, max);
+	while (i < size)
+	{
+		printf("%d\n", ptr[i]);
+		i++;
+	}
 }
 */
