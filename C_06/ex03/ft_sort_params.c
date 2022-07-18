@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 19:33:18 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/16 23:15:26 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/17 10:36:05 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,10 @@ void	ft_putstr(char *str)
 
 	i = 0;
 	while (str[i])
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
+		ft_putchar(str[i++]);
 }
 
-int	ft_strcmp(char **s1, char **s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
@@ -39,49 +36,42 @@ int	ft_strcmp(char **s1, char **s2)
 		if (s1[i] == s2[i])
 			i++;
 		else
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+			return (s1[i] - s2[i]);
 	}
 	return (0);
 }
 
-void	ft_sort(char **str, int count)
+void	ft_swap(char **a, char **b)
 {
-	int		i;
-	int		j;
-	char	**temp;
+	char	*temp;
 
-	i = 1;
-	temp = NULL;
-	while (i == (count - 2))
-	{
-		j = i + 1;
-		if (ft_strcmp(str[i][0], str[j][0]) > 0)
-		{
-			temp = &str[i];
-			str[i][0] = str[j][0];
-			str[j][0] = **temp;
-		}
-		else
-			i++;
-	}
-	
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
-
 
 int	main(int argc, char **argv)
 {
 	int	i;
+	int	j;
 
-	i = 1;
-	while (i < (argc - 2))
+	j = 1;
+	while (j < (argc - 1))
 	{
-		ft_sort(argv[i][0], argc);
-		i++;
-	}
-	i = 1;
-	while (i < (argc - 1))
-	{
-		ft_putstr(&argv[i][0]);
+		i = 1;
+		while (i < (argc - 1))
+		{
+			if (ft_strcmp(argv[i], argv[i + 1]) > 0)
+				ft_swap(&argv[i], &argv[i + 1]);
 			i++;
+		}
+		j++;
 	}
+	i = 1;
+	while (i < argc)
+	{
+		ft_putstr(argv[i++]);
+		ft_putchar('\n');
+	}
+	return (0);
 }
