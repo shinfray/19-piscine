@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:10:24 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/19 14:41:02 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/20 16:42:53 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ int	ft_calcul_total_len(char **strs, char *sep, int size)
 		total_len += ft_strlen(strs[i]) + ft_strlen(sep);
 		i++;
 	}
-	total_len -= ft_strlen(sep);
+	if (size > 0)
+		total_len -= ft_strlen(sep);
 	return (total_len);
 }
 
@@ -48,8 +49,6 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	i = 0;
 	j = 0;
 	k = 0;
-	if (size < 1)
-		return ("");
 	tab = malloc(sizeof(*tab) * ft_calcul_total_len(strs, sep, size) + 1);
 	if (!tab)
 		return (0);
@@ -77,15 +76,16 @@ int	main(void)
 	char	*result;
 	char	**strs;
 
-	size = 5;
+	size = 0;
 	strs = malloc(sizeof(*strs) * size);
-	strs[0] = "Hello";
-	strs[1] = "you";
-	strs[2] = "and everyone!";
-	strs[3] = "abcd";
-	strs[4] = "efgh";
+//	strs[0] = "Hello";
+//	strs[1] = "you";
+//	strs[2] = "and everyone!";
+//	strs[3] = "abcd";
+//	strs[4] = "efgh";
 	result = ft_strjoin(size, strs, sep);
 	printf("%s\n", result);
 	free(strs);
+	free(result);
 }
 */
