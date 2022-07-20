@@ -6,15 +6,12 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 21:29:38 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/14 22:27:37 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/20 20:44:27 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_fibonacci(int index)
 {
-	int	res;
-
-	res = 0;
 	if (index < 0)
 		return (-1);
 	if (index < 2)
