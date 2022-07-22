@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:10:24 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/22 11:43:26 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/22 12:09:40 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (tab);
 }
 
-/*
+
 #include <stdio.h>
 
 int	main(void)
@@ -79,7 +79,7 @@ int	main(void)
 	size = 5;
 	strs = malloc(sizeof(*strs) * size);
 	strs[0] = "Hello";
-	strs[1] = "you";
+	strs[1] = 0;
 	strs[2] = "and everyone!";
 	strs[3] = "abcd";
 	strs[4] = "efgh";
@@ -88,4 +88,4 @@ int	main(void)
 	free(strs);
 	free(result);
 }
-*/
+
