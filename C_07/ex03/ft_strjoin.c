@@ -6,7 +6,7 @@
 /*   By: shinfray <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 21:10:24 by shinfray          #+#    #+#             */
-/*   Updated: 2022/07/20 16:42:53 by shinfray         ###   ########.fr       */
+/*   Updated: 2022/07/22 11:43:26 by shinfray         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,13 +76,13 @@ int	main(void)
 	char	*result;
 	char	**strs;
 
-	size = 0;
+	size = 5;
 	strs = malloc(sizeof(*strs) * size);
-//	strs[0] = "Hello";
-//	strs[1] = "you";
-//	strs[2] = "and everyone!";
-//	strs[3] = "abcd";
-//	strs[4] = "efgh";
+	strs[0] = "Hello";
+	strs[1] = "you";
+	strs[2] = "and everyone!";
+	strs[3] = "abcd";
+	strs[4] = "efgh";
 	result = ft_strjoin(size, strs, sep);
 	printf("%s\n", result);
 	free(strs);
